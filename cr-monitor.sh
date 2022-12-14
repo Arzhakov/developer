@@ -13,3 +13,8 @@
 # v3
 now=`date '+%Y-%m-%d %H:%M:%S'`
 echo "$now;`LC_ALL=C top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}'`;`free -m | awk '/Mem:/ { printf("%.0f", $3/$2*100) }'`"
+
+
+1
+2
+3
